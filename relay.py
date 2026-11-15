@@ -1,14 +1,22 @@
 import asyncio
+import os
 import discord
+from dotenv import load_dotenv
 
-READER_TOKEN   = ""
-BOT_TOKEN      = ""
+# Load environment variables from .env
+load_dotenv()
+
+READER_TOKEN = os.getenv("READER_TOKEN")
+BOT_TOKEN    = os.getenv("BOT_TOKEN")
+
+if not READER_TOKEN or not BOT_TOKEN:
+    raise ValueError("Missing tokens in .env file")
 
 # map: source_channel_id -> target_channel_id
 ROUTES = {
-    1195058312115400775: 1571568580359749673, 
-    1398631293083844739: 1571582889504678068, 
-    1497417710097928274: 1571583931340296384, 
+    1195058312115400775: 1571568580359749673, # Jay Nepal -> Target 1
+    1195058312115400776: 1571582889504678068, # The Namaste Nepal -> Target 2
+    1195058312115400777: 1571583931340296384, # Nepali Chuds -> Target 3
 }
 REVERSE_ROUTES = {v: k for k, v in ROUTES.items()}
 

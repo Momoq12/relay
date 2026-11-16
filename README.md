@@ -2,7 +2,7 @@
 
 Displays messages from one discord server to another.
 
-use the ".say" prefix in corresponding relay channel of your own relay discord server to send messages to the said server.
+Use the ".say" prefix in corresponding relay channel of your own relay discord server to send messages to the said server.
 
 # setup
 

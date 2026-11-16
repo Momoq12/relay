@@ -7,7 +7,11 @@ use the ".say" prefix in corresponding relay channel of your own relay discord s
 # setup
 
 Replace the placeholder in .env file with your own tokens WITHOUT THE QUOTATION MARKS
+
+
 Example:
+
 BOT_TOKEN = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 READER_TOKEN = ABCDEFGHIJKLMNOPQRSTUVWXYZ
 

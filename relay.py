@@ -16,7 +16,12 @@ if not READER_TOKEN or not BOT_TOKEN:
 ROUTES = {
     REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel 1:Write channel 1
     REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel 2:Write channel 2
-    REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel:Write channel 3
+    REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel 3:Write channel 3
+
+    #Add as many channels as you want 
+    #The reader account must be in the server whose messages you want to relay
+    #The writer account must be in the server where the relays messages will be displayed
+    
 }
 REVERSE_ROUTES = {v: k for k, v in ROUTES.items()}
 

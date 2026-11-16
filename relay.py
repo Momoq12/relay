@@ -14,9 +14,9 @@ if not READER_TOKEN or not BOT_TOKEN:
 
 # map: source_channel_id -> target_channel_id
 ROUTES = {
-    1195058312115400775: 1571568580359749673, # Jay Nepal -> Target 1
-    1398631293083844739: 1571582889504678068, # The Namaste Nepal -> Target 2
-    1497417710097928274: 1571583931340296384, # Nepali Chuds -> Target 3
+    REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel 1:Write channel 1
+    REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel 2:Write channel 2
+    REPLACE_WITH_CHANNEL_ID: REPLACE_WITH_CHANNEL_ID, # Read channel:Write channel 3
 }
 REVERSE_ROUTES = {v: k for k, v in ROUTES.items()}
 
